@@ -1,0 +1,11 @@
+{
+    "name": "cypress_just_join_it",
+    "version": "1.0.0",
+    "description": "E2E tests for justjoin.it",
+    "main": "index.js",
+    "license": "MIT",
+    "private": false,
+    "dependencies": {
+      "cypress": "^6.0.0"
+    }
+  }
