@@ -10,6 +10,20 @@ describe('Log-in test', () => {
     cy.xpath('//input[@name="email"]').type(username)
     cy.xpath('//input[@name="password"]').type(password)
     cy.xpath('//button[@type="submit"]/span[text()="Sign in"]').click()
-    cy.url()
   })
+
+  it('Log-in test request ', () => {
+    const username = Cypress.env('username')
+    const password = Cypress.env('password')
+
+    cy.request({
+      method: 'POST',
+      url: "https://justjoin.it/api/developers/auth",
+      form: true,
+      body: {
+        email: username,
+        password: password
+      }
+    })
+  });
 })
