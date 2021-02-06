@@ -3,5 +3,10 @@
     "waitForAnimations": true,
     "viewportWidth": 1440,
     "viewportHeight": 900,
-    "experimentalStudio": true
+    "experimentalStudio": true,
+
+    "env": {
+        "username": "sniegolaz9182@mailinator.com",
+        "password": "BESTcookies18"
+    }
 }
