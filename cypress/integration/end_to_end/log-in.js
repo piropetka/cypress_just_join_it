@@ -13,6 +13,3 @@ describe('Log-in test', () => {
     cy.url()
   })
 })
-
-//sniegolaz9182@mailinator.com
-//BESTcookies18
