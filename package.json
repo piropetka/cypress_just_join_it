@@ -6,7 +6,10 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "cypress": "latest",
     "prettier": "latest"
+  },
+  "devDependencies": {
+    "cypress": "^6.4.0",
+    "cypress-xpath": "^1.6.1"
   }
 }
