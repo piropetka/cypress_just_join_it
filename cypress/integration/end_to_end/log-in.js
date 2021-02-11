@@ -1,9 +1,10 @@
 describe('Log-in to justjoin.it test', () => {
-  it('Log-in as a user', () => {
-    const username = Cypress.env('username')
-    const password = Cypress.env('password')
+  const username = Cypress.env('username')
+  const password = Cypress.env('password')
 
-    cy.visit('https://justjoin.it/')
+  it('Log-in as a user', () => {
+
+    cy.visit('/')
     cy.xpath('//span[text()="Sign in"]').click()
     cy.xpath('//span[text()="Sign in as a developer"]').click()
     cy.xpath('//input[@name="email"]').type(username)
@@ -15,7 +16,7 @@ describe('Log-in to justjoin.it test', () => {
 
     cy.request({
       method: 'POST',
-      url: "https://justjoin.it/api/developers/auth",
+      url: "/api/developers/auth",
       form: true,
       body: {
         email: username,
